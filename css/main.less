@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 body{
-  background: url('../img/bsd.jpg') top center / 230px no-repeat, #3b464e;
+  background: url('../img/bsd.jpg') top center / 230px no-repeat, linear-gradient(45deg, #A86132, #3A104D);
   font-family: 'Oswald', sans-serif;
   font-size: 28px;
-  color: #fff;
+  color: white;
   h1{
     font-size: 22px;
     text-align: center;
@@ -15,6 +15,7 @@ body{
   max-width: 300px;
   display: block;
   margin: 20vh auto;
+
 }
 
 .grid-4-5{
@@ -35,7 +36,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #434e49;
+    background: linear-gradient(45deg, transparent, #73919eaa);
+    box-shadow: 0 0 1px black;
     border-radius: 3px;
   }
 }
@@ -45,9 +47,17 @@ body{
   display: block;
   width: 100%;
   height: 40px;
-  background: #434e49;
+  background: linear-gradient(45deg, transparent, #73919eaa);
+  box-shadow: 0 0 1px black;
   border-radius: 3px;
   margin-bottom: 10px;
   text-align: right;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+.active{
+  color: #e0cdf0;
+  position: relative;
+  text-shadow: 1px -2px 1px black;
 }
