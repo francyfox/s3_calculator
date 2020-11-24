@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var InputArr = [];
     var NumString = '';
-    var ScreenInterface = {
 
+    var ScreenInterface = {
         InputMode: function (msg, num, hasOperator){
             console.log(InputArr);
             if (hasOperator){
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
         },
         OutputMode: function (msg){
-            options().ScreenOutput.innerText = InputArr.join(' ');
+            options().ScreenOutput.innerText = msg;
             InputArr = [];
             options().ScreenInput.innerText = '0';
         },
@@ -87,14 +87,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function touchOp() {
         switch (this.id) {
             case options().SystemOperators[0]: // AC
+                console.log(InputArr);
                 InputArr = [];
-                DeviceInterface.InputMode('0', 0);
+                DeviceInterface.InputMode('0', 0, true);
                 break;
             case options().SystemOperators[1]: // equal
                 if (InputArr != []){
-                    DeviceInterface.OutputMode(this.innerText);
+                    var answer = calc(InputArr.filter(Boolean));  // TODO: Must be in begin filtered array
+                    DeviceInterface.OutputMode(answer);
+
                 }
-                DeviceInterface.InputMode('', 0);
+                InputArr = [];
+                DeviceInterface.InputMode('', 0, true);
                 break;
             case options().SystemOperators[2]:  // point
                 break;
@@ -105,8 +109,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     }
     
-    function calc() {
+    function calc(NumArray) {
+        for (var first=0; first < NumArray.length; first+2){ // TODO: Remove for
+            var second = first + 1;
+            var third = second + 1;
+            var PartA, PartB;
 
+            switch (NumArray[second]) {
+                case '+':
+                    PartB = parseFloat(NumArray[first]) + parseFloat(NumArray[third]);
+                    NumArray.splice(0, 3);
+                    // return parseFloat(NumArray[first]) + parseFloat(NumArray[third]);
+                    break;
+            }
+        }
     }
 
     function Device() {
@@ -121,6 +137,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     /*
     1. Записываем в массив входные данные (числа и операторы)
     2. Поиск операторов слева направо по приоритету (скобки, умнож, деление, плюс, минус) приоритет
+    3. Логика оператора if { switch 2 элемента }else{ switch 3 элемента }
      */
 
 });
