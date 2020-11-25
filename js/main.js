@@ -108,21 +108,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 counter++;
         }
     }
-    
-    function calc(NumArray) {
-        for (var first=0; first < NumArray.length; first+2){ // TODO: Remove for
-            var second = first + 1;
-            var third = second + 1;
-            var PartA, PartB;
 
-            switch (NumArray[second]) {
+    var PartA = 0, PartB = 0;
+    function calc(NumArray) {
+
+        while (NumArray.length > 2){
+            console.log(NumArray.length);
+
+            switch (NumArray[1]) {
                 case '+':
-                    PartB = parseFloat(NumArray[first]) + parseFloat(NumArray[third]);
+                    PartB = parseFloat(NumArray[0]) + parseFloat(NumArray[2]);
                     NumArray.splice(0, 3);
-                    // return parseFloat(NumArray[first]) + parseFloat(NumArray[third]);
-                    break;
+                    NumArray.unshift(PartB);
+                    console.log(NumArray.length);
             }
+            console.log(NumArray);
         }
+        return NumArray[0];
     }
 
     function Device() {
