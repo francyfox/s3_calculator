@@ -108,21 +108,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 counter++;
         }
     }
-    
-    function calc(NumArray) {
-        for (var first=0; first < NumArray.length; first+2){ // TODO: Remove for
-            var second = first + 1;
-            var third = second + 1;
-            var PartA, PartB;
 
-            switch (NumArray[second]) {
+    var PartA = 0, PartB = 0;
+    function calc(NumArray) {
+
+        while (NumArray.length > 2){
+
+            switch (NumArray[1]) {
                 case '+':
-                    PartB = parseFloat(NumArray[first]) + parseFloat(NumArray[third]);
+                    PartB = parseFloat(NumArray[0]) + parseFloat(NumArray[2]);
                     NumArray.splice(0, 3);
-                    // return parseFloat(NumArray[first]) + parseFloat(NumArray[third]);
-                    break;
+                    NumArray.unshift(PartB);
+
             }
+
         }
+        return NumArray[0];
     }
 
     function Device() {
@@ -137,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     /*
     1. Записываем в массив входные данные (числа и операторы)
     2. Поиск операторов слева направо по приоритету (скобки, умнож, деление, плюс, минус) приоритет
-    3. Логика оператора if { switch 2 элемента }else{ switch 3 элемента }
+    3. Логика оператора while {switch}
      */
 
 });
