@@ -94,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 }
                 InputArr = [];
                 DeviceInterface.InputMode('', 0, true);
+                document.querySelector('.devil').style.opacity = '1';
         }
 
         if (this.id == 'plus' || this.id == 'minus' || this.id == 'multiply' || this.id == 'devide') {
