@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b2949bc2-af66-4b4c-a0f4-bc6582bbbffb" name="Default Changelist" comment="DmC2">
+      <change beforePath="$PROJECT_DIR$/css/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="hellisart &lt;7info7web@gmail.com&gt;" />
+        <option value="francyfox &lt;7info7web@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kJmlUyJZcMreAZiACnNEIEb9yR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/s3_calculator/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2949bc2-af66-4b4c-a0f4-bc6582bbbffb" name="Default Changelist" comment="" />
+      <created>1605427219593</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605427219593</updated>
+      <workItem from="1605427220849" duration="6943000" />
+      <workItem from="1605492187295" duration="3411000" />
+      <workItem from="1605505602963" duration="3049000" />
+      <workItem from="1605581662473" duration="7430000" />
+      <workItem from="1605665244867" duration="5477000" />
+      <workItem from="1605748994021" duration="5510000" />
+      <workItem from="1605841648808" duration="2533000" />
+      <workItem from="1605862304195" duration="722000" />
+      <workItem from="1605863039272" duration="5840000" />
+      <workItem from="1605938616502" duration="7704000" />
+      <workItem from="1606028218674" duration="3859000" />
+      <workItem from="1606040801896" duration="4908000" />
+      <workItem from="1606184742925" duration="4167000" />
+      <workItem from="1606270860173" duration="4747000" />
+      <workItem from="1606276839583" duration="349000" />
+      <workItem from="1606444951437" duration="3662000" />
+      <workItem from="1606484628709" duration="6194000" />
+    </task>
+    <task id="LOCAL-00001" summary="add string Input text with multiply">
+      <created>1606048814302</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606048814302</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add string Input text with multiply">
+      <created>1606188678579</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606188678579</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test">
+      <created>1606271643731</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606271643731</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Logic of the multiply operator is completely work">
+      <created>1606276451592</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606276451592</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Logic of the multiply operator is completely work">
+      <created>1606276615472</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606276615472</updated>
+    </task>
+    <task id="LOCAL-00006" summary="change branch">
+      <created>1606276747256</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606276747256</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test2">
+      <created>1606276913076</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606276913076</updated>
+    </task>
+    <task id="LOCAL-00008" summary="test3">
+      <created>1606277026320</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606277026320</updated>
+    </task>
+    <task id="LOCAL-00009" summary="small refactor">
+      <created>1606489054070</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606489054070</updated>
+    </task>
+    <task id="LOCAL-00010" summary="DmC">
+      <created>1606490129712</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606490129712</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="add string Input text with multiply" />
+    <MESSAGE value="test" />
+    <MESSAGE value="Logic of the multiply operator is completely work" />
+    <MESSAGE value="change branch" />
+    <MESSAGE value="test2" />
+    <MESSAGE value="test3" />
+    <MESSAGE value="small refactor" />
+    <MESSAGE value="DmC" />
+    <option name="LAST_COMMIT_MESSAGE" value="DmC" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="737" y="324" width="439" height="451" key="#Web_Browsers" timestamp="1605428000676">
+      <screen x="0" y="40" width="1920" height="1010" />
+    </state>
+    <state x="737" y="324" width="439" height="451" key="#Web_Browsers/0.40.1920.1010@0.40.1920.1010" timestamp="1605428000676" />
+    <state x="698" y="345" width="517" height="408" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605427297535">
+      <screen x="0" y="40" width="1920" height="1010" />
+    </state>
+    <state x="698" y="345" width="517" height="408" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1920.1010@0.40.1920.1010" timestamp="1605427297535" />
+    <state x="541" y="87" width="831" height="932" key="CommitChangelistDialog2" timestamp="1606490804994">
+      <screen x="0" y="40" width="1920" height="1010" />
+    </state>
+    <state x="541" y="87" width="831" height="932" key="CommitChangelistDialog2/0.40.1920.1010@0.40.1920.1010" timestamp="1606490804994" />
+    <state x="184" y="134" width="1540" height="847" key="DiffContextDialog" timestamp="1606276810153">
+      <screen x="0" y="40" width="1920" height="1010" />
+    </state>
+    <state x="184" y="134" width="1540" height="847" key="DiffContextDialog/0.40.1920.1010@0.40.1920.1010" timestamp="1606276810153" />
+    <state x="815" y="448" width="290" height="271" key="Github.ShareDialog" timestamp="1605581728610">
+      <screen x="0" y="40" width="1920" height="1010" />
+    </state>
+    <state x="815" y="448" width="290" height="271" key="Github.ShareDialog/0.40.1920.1010@0.40.1920.1010" timestamp="1605581728610" />
+    <state x="745" y="226" width="423" height="653" key="Github.UntrackedFilesDialog" timestamp="1605581745019">
+      <screen x="0" y="40" width="1920" height="1010" />
+    </state>
+    <state x="745" y="226" width="423" height="653" key="Github.UntrackedFilesDialog/0.40.1920.1010@0.40.1920.1010" timestamp="1605581745019" />
+    <state x="184" y="134" width="1540" height="847" key="MergeDialog" timestamp="1606276631165">
+      <screen x="0" y="40" width="1920" height="1010" />
+    </state>
+    <state x="184" y="134" width="1540" height="847" key="MergeDialog/0.40.1920.1010@0.40.1920.1010" timestamp="1606276631165" />
+    <state x="595" y="310" width="724" height="486" key="MultipleFileMergeDialog" timestamp="1606276637679">
+      <screen x="0" y="40" width="1920" height="1010" />
+    </state>
+    <state x="595" y="310" width="724" height="486" key="MultipleFileMergeDialog/0.40.1920.1010@0.40.1920.1010" timestamp="1606276637679" />
+    <state x="456" y="180" width="1007" height="739" key="SettingsEditor" timestamp="1605863025479">
+      <screen x="0" y="40" width="1920" height="1010" />
+    </state>
+    <state x="456" y="180" width="1007" height="739" key="SettingsEditor/0.40.1920.1010@0.40.1920.1010" timestamp="1605863025479" />
+    <state x="555" y="284" width="804" height="537" key="Vcs.Push.Dialog.v2" timestamp="1606490789423">
+      <screen x="0" y="40" width="1920" height="1010" />
+    </state>
+    <state x="555" y="284" width="804" height="537" key="Vcs.Push.Dialog.v2/0.40.1920.1010@0.40.1920.1010" timestamp="1606490789423" />
+    <state x="622" y="249" key="run.anything.popup" timestamp="1606488233970">
+      <screen x="0" y="40" width="1920" height="1010" />
+    </state>
+    <state x="622" y="249" key="run.anything.popup/0.40.1920.1010@0.40.1920.1010" timestamp="1606488233970" />
+    <state x="623" y="261" width="672" height="678" key="search.everywhere.popup" timestamp="1606188084569">
+      <screen x="0" y="40" width="1920" height="1010" />
+    </state>
+    <state x="623" y="261" width="672" height="678" key="search.everywhere.popup/0.40.1920.1010@0.40.1920.1010" timestamp="1606188084569" />
+  </component>
+</project>
