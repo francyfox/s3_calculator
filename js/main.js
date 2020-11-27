@@ -4,24 +4,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let numbers = {};
     let operators = {};
 
-    function options(ButtonsWrapper, ScreenInput, ScreenOutput, SystemOperators) {
+    let InputArr = [];
+    let NumString = '';
+    let PartB = 0;
+    let counter = 0;
 
-        ButtonsWrapper = (ButtonsWrapper) ? ButtonsWrapper: '.grid-4-5';
-        ScreenInput = (ScreenInput) ? ScreenInput: '#input';
-        ScreenOutput = (ScreenOutput) ? ScreenOutput: '#output';
-        SystemOperators = (SystemOperators) ? SystemOperators: ['AC', 'equal', 'point'];
+    function options(SystemOperators) {
+        SystemOperators = (SystemOperators) ? SystemOperators : ['AC', 'equal', 'point'];
 
-        this.ButtonsWrapper = document.querySelector(ButtonsWrapper);
+        this.ButtonsWrapper = document.querySelector('.grid-4-5');
         this.Buttons = this.ButtonsWrapper.children;
-        this.ScreenInput = document.querySelector(ScreenInput);
-        this.ScreenOutput = document.querySelector(ScreenOutput);
+        this.ScreenInput = document.querySelector('#input');
+        this.ScreenOutput = document.querySelector('#output');
         this.SystemOperators = SystemOperators;
 
-        for (var i = 0; i < this.Buttons.length; i++){
+        for (var i = 0; i < this.Buttons.length; i++) {
             let getId = this.Buttons[i].getAttribute('id');
             let But = this.Buttons[i];
 
-            if(isNaN(getId)){
+            if (isNaN(getId)) {
                 operators[getId] = But;
                 ButtonsObj['operators'] = operators;
                 But.addEventListener("click", touchOp);
@@ -38,17 +39,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         return this;
     }
 
-    var InputArr = [];
-    var NumString = '';
-
-    var ScreenInterface = {
-        InputMode: function (msg, num, hasOperator){
-            console.log(InputArr);
-            if (hasOperator){
+    let ScreenInterface = {
+        InputMode: function (msg, num, hasOperator) {
+            if (hasOperator) {
                 NumString = '';
                 InputArr[num] = msg;
                 options().ScreenInput.innerText = InputArr.join(' ');
-            }else{
+            } else {
                 NumString += msg;
                 InputArr[num] = NumString;
                 options().ScreenInput.innerText = InputArr.join(' ');
@@ -67,9 +64,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     }
 
+    let DeviceInterface = Object.create(ScreenInterface);
 
-    var DeviceInterface = Object.create(ScreenInterface);
-    var counter = 0;
 
     function touchNum() {
         // console.log(event.key);
@@ -85,62 +81,63 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
     function touchOp() {
+
         switch (this.id) {
             case options().SystemOperators[0]: // AC
-                console.log(InputArr);
                 InputArr = [];
                 DeviceInterface.InputMode('0', 0, true);
                 break;
             case options().SystemOperators[1]: // equal
-                if (InputArr != []){
-                    var answer = calc(InputArr.filter(Boolean));  // TODO: Must be in begin filtered array
+                if (InputArr != []) {
+                    let answer = calc(InputArr.filter(Boolean));  // TODO: Must be in begin filtered array
                     DeviceInterface.OutputMode(answer);
-
                 }
                 InputArr = [];
                 DeviceInterface.InputMode('', 0, true);
-                break;
-            case options().SystemOperators[2]:  // point
-                break;
-            case 'plus':
-                counter++;
-                DeviceInterface.InputMode(this.innerText, counter, true);
-                counter++;
+        }
+
+        if (this.id == 'plus' || this.id == 'minus' || this.id == 'multiply' || this.id == 'devide') {
+            counter++;
+            DeviceInterface.InputMode(this.innerText, counter, true);
+            counter++;
         }
     }
 
-    var PartA = 0, PartB = 0;
+
     function calc(NumArray) {
-
-        while (NumArray.length > 2){
-            console.log(NumArray.length);
-
+        if (NumArray[0] == '-') {
+            NumArray[1] = '-' + NumArray[1];
+            NumArray.splice(0, 1);
+        }
+        while (NumArray.length > 2) {
             switch (NumArray[1]) {
                 case '+':
                     PartB = parseFloat(NumArray[0]) + parseFloat(NumArray[2]);
-                    NumArray.splice(0, 3);
-                    NumArray.unshift(PartB);
-                    console.log(NumArray.length);
+                    break;
+                case '-':
+                    PartB = parseFloat(NumArray[0]) - parseFloat(NumArray[2]);
+                    break;
+                case 'x':
+                    PartB = parseFloat(NumArray[0]) * parseFloat(NumArray[2]);
+                    break;
+                case '/':
+                    PartB = parseFloat(NumArray[0]) / parseFloat(NumArray[2]);
             }
-            console.log(NumArray);
+
+            NumArray.splice(0, 3);
+            NumArray.unshift(PartB);
         }
         return NumArray[0];
     }
 
 
-    function Device() {
-        options();
-    }
-
-
     (function() {
-        Device();
+        options();
     })()  // init
 
     /*
     1. Записываем в массив входные данные (числа и операторы)
-    2. Поиск операторов слева направо по приоритету (скобки, умнож, деление, плюс, минус) приоритет
-    3. Логика оператора if { switch 2 элемента }else{ switch 3 элемента }
+    2. Поиск операторов слева направо по приоритету (скобки, умнож, деление, плюс, минус) разбить на матрицу
      */
 
 });
