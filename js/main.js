@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let NumString = '';
     let PartB = 0;
     let counter = 0;
+    var vvv;
 
     function options(SystemOperators) {
         SystemOperators = (SystemOperators) ? SystemOperators : ['AC', 'equal', 'point'];
